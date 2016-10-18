@@ -1,6 +1,7 @@
 {
     "excludeFiles": [
         "node_modules/**",
+	"bower_components/**",
         "vendor/**"
     ],
     "requireSpaceAfterKeywords": [
@@ -66,3 +67,4 @@
     "requireDotNotation": true,
     "validateParameterSeparator": ", "
 }
+
