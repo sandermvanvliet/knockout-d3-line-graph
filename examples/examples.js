@@ -17,13 +17,13 @@ function ViewModel() {
     });
 
     this.complexData = ko.observableArray([
-        { position: new Date(2015, 1, 1), value: 10 },
-        { position: new Date(2015, 1, 2), value: 8 },
-        { position: new Date(2015, 1, 3), value: 12 },
-        { position: new Date(2015, 1, 4), value: 13 },
-        { position: new Date(2015, 1, 5), value: 11 },
-        { position: new Date(2015, 1, 6), value: 7 },
-        { position: new Date(2015, 1, 7), value: 5 }
+        { position: new Date(2015, 1, 1), value: 10, baseLine: 4 },
+        { position: new Date(2015, 1, 2), value: 8, baseLine: 4 },
+        { position: new Date(2015, 1, 3), value: 12, baseLine: 5 },
+        { position: new Date(2015, 1, 4), value: 13, baseLine: 5 },
+        { position: new Date(2015, 1, 5), value: 11, baseLine: 7 },
+        { position: new Date(2015, 1, 6), value: 7, baseLine: 7 },
+        { position: new Date(2015, 1, 7), value: 5, baseLine: 7 }
     ]);
 }
 

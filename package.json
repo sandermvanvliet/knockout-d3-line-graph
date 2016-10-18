@@ -11,11 +11,11 @@
     "Sander van Vliet <sauron@barad-dur.nl>"
   ],
   "dependencies": {
-    "knockout": "=3.1.0",
-    "d3": "=3.4.4"
+    "knockout": "=3.4.0",
+    "d3": "=4.2.7"
   },
   "devDependencies": {
-    "jscs": "1.11.3",
-    "jshint": "2.6.3"
+    "jscs": "3.0.7",
+    "jshint": "2.9.3"
   }
 }
