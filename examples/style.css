@@ -56,7 +56,7 @@ button {
 }
 
 .baseline {
-    stroke: rgba(255,0,0,0.25);
+    stroke: rgba(255,255,255,0.25);
     stroke-linejoin: round;
     stroke-width: 1.5;
     fill: none;
@@ -64,6 +64,11 @@ button {
 
 .area {
     fill: rgba(255,255,255,0.10);
+    stroke-width: 0;
+}
+
+.baselinearea {
+    fill: rgba(255,255,255,0.40);
     stroke-width: 0;
 }
 
