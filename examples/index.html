@@ -81,6 +81,25 @@
 		</div>
 	</div>
 
+	<div class="exampleContainer">
+		<p>
+			This example demonstrates setting a fixed domain
+		</p>
+		<pre>{ position: new Date(2015, 1, 1), value: 11, baseLine: 5 }</pre>
+		<div id="Example4" class="example" data-bind="d3LineGraph: { 
+                value: complexData,
+                showAxes: true, 
+                xScale: d3.time.scale, 
+                x: function (d, i) { return d.position; },
+                y: function (d) { return d.value; },
+                xAxisOptions: function (axis) { axis.tickFormat(d3.time.format('%d')); },
+                showBaseLine: true,
+                baseLine: function(d) { return d.baseLine; },
+				yDomain: [ 0, 15 ]
+            }">
+		</div>
+	</div>
+
 	<script src="examples.js"></script>
 
 </body>
