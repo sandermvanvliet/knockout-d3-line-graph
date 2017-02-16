@@ -60,7 +60,7 @@
                 y: function (d) { return d.value; },
                 xAxisOptions: function (axis) { axis.tickFormat(d3.time.format('%d')); }
             }">
-		</div>
+	</div>
 	</div>
 
 	<div class="exampleContainer">
@@ -78,7 +78,7 @@
                 showBaseLine: true,
                 baseLine: function(d) { return d.baseLine; }
             }">
-		</div>
+	</div>
 	</div>
 
 	<div class="exampleContainer">
@@ -97,7 +97,30 @@
                 baseLine: function(d) { return d.baseLine; },
 				yDomain: [ 0, 15 ]
             }">
-		</div>
+	</div>
+	</div>
+
+	<div class="exampleContainer">
+		<p>
+			This example demonstrates multiple data lines
+		</p>
+		<pre>{ position: new Date(2015, 1, 1), value: 11, id: 'a' },<br />{ position: new Date(2015, 1, 1), value: 9, id: 'b' }
+		</pre>
+		<p>
+			When displaying multiple data lines the area is disabled.
+		</p>
+		<div id="Example4" class="example" data-bind="d3LineGraph: { 
+                value: multiComplexData,
+                showAxes: true, 
+                xScale: d3.time.scale, 
+                x: function (d, i) { return d.position; },
+                y: function (d) { return d.value; },
+				grouping: function(d) { return d.id; },
+                xAxisOptions: function (axis) { axis.tickFormat(d3.time.format('%d')); },
+                baseLine: function(d) { return d.baseLine; },
+				yDomain: [ 0, 15 ]
+            }">
+	</div>
 	</div>
 
 	<script src="examples.js"></script>
