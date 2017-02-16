@@ -1,1 +1,1 @@
-../node_modules/knockout/build/output/knockout-latest.js
+../bower_components/knockoutjs/dist/knockout.js
